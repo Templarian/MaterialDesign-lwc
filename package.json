@@ -1,5 +1,5 @@
 {
-  "name": "lwc-demo",
+  "name": "@mdi/lwc",
   "version": "1.0.0",
   "description": "Generate Lightning web component documentation.",
   "main": "index.js",
@@ -22,7 +22,7 @@
       "prettier --write"
     ],
     "**/modules/**": [
-       "eslint"
+      "eslint"
     ],
     "*": [
       "git add"
