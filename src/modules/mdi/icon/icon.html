@@ -1,0 +1,23 @@
+<template>
+    <template if:true={computedIsAriaHidden}>
+        <svg
+            viewBox="0 0 24 24"
+            aria-labelledby="title"
+            aria-hidden="true">
+            <path
+                d={path}
+                style={computedStyle}></path>
+        </svg>
+    </template>
+    <template if:false={computedIsAriaHidden}>
+        <svg
+            viewBox="0 0 24 24"
+            aria-labelledby="title"
+            role="presentation">
+            <title id="title">{label}</title>
+            <path
+                d={path}
+                style={computedStyle}></path>
+        </svg>
+    </template>
+</template>
